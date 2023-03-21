@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SwagLabs">
+    <test name="SwagLabs">
+        <classes>
+            <class name="tests.SwagLabs.LoginTests"></class>
+            <class name="tests.SwagLabs.HomePageTests"></class>
+            <class name="tests.SwagLabs.ProductPageTests"></class>
+        </classes>
+    </test>
+</suite>

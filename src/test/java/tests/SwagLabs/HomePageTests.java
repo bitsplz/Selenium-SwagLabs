@@ -1,5 +1,6 @@
 package tests.SwagLabs;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -11,10 +12,10 @@ import pageobjects.swaglabs.ProductPage;
 public class HomePageTests extends BaseTest{
     HomePage homePage;
     LoginPage loginPage;
-    @BeforeClass
-    public void setupClass(){
-
-    }
+//    @BeforeClass
+//    public void setupClass(){
+//        this.driver = new ChromeDriver(this.options);
+//    }
     @BeforeMethod
     public void beforeEach(){
         driver.get(properties.getProperty("URL"));

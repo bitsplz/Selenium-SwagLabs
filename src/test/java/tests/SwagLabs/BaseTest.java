@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import utils.UtilsConfig;
 
 import java.util.Properties;
@@ -14,9 +14,9 @@ public class BaseTest {
     protected WebDriver driver;
     protected Properties properties;
     protected Properties XPATH;
-    private ChromeOptions options;
+    protected ChromeOptions options;
     protected WebDriverWait wait;
-    @BeforeSuite
+    @BeforeTest
     public void setupBeforeSuite(){
         this.options = new ChromeOptions();
         this.options.addArguments("start-maximized");
@@ -27,7 +27,7 @@ public class BaseTest {
         this.XPATH = UtilsConfig.getProperties("xpath");
     }
 
-    @AfterSuite
+    @AfterTest
     public void setupAfterSuite() {
         this.driver.quit();
     }

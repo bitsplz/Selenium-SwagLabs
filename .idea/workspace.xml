@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71782ddc-c9ad-45e6-a1f5-fdf6f5a737ee" name="Changes" comment="add testng report">
-      <change afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SwagLabs/CommonTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SwagLabs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SwagLabs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/swaglabs/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/swaglabs/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,7 +63,7 @@
       <recent name="C:\Users\mujtaba.afzal\IdeaProjects\Selenium-Implementation\src\test\java\Tests\SwagLabs" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/mujtaba.afzal/IdeaProjects/Selenium-Implementation/src/test/java/tests/SwagLabs/SwagLabRunner.xml">
+  <component name="RunManager" selected="TestNG.CommonTests.windowHandle">
     <configuration name="C:/Users/mujtaba.afzal/IdeaProjects/Selenium-Implementation/src/test/java/tests/SwagLabs/SwagLabRunner.xml" type="TestNG" nameIsGenerated="true">
       <module name="Selenium-Implementation" />
       <shortenClasspath name="NONE" />
@@ -79,6 +86,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommonTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.SwagLabs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.SwagLabs" />
+      <option name="MAIN_CLASS_NAME" value="tests.SwagLabs.CommonTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonTests.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.SwagLabs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.SwagLabs" />
+      <option name="MAIN_CLASS_NAME" value="tests.SwagLabs.CommonTests" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonTests.windowHandle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.SwagLabs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.SwagLabs" />
+      <option name="MAIN_CLASS_NAME" value="tests.SwagLabs.CommonTests" />
+      <option name="METHOD_NAME" value="windowHandle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-Implementation" />
       <extension name="coverage">
@@ -90,42 +150,6 @@
       <option name="PACKAGE_NAME" value="tests.SwagLabs" />
       <option name="MAIN_CLASS_NAME" value="tests.SwagLabs.HomePageTests" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTests.removeFromCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Implementation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.SwagLabs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.SwagLabs" />
-      <option name="MAIN_CLASS_NAME" value="tests.SwagLabs.HomePageTests" />
-      <option name="METHOD_NAME" value="removeFromCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests.loginEnter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Implementation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pageobjects.swaglabs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.SwagLabs" />
-      <option name="MAIN_CLASS_NAME" value="tests.SwagLabs.LoginTests" />
-      <option name="METHOD_NAME" value="loginEnter" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -151,17 +175,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.C:/Users/mujtaba.afzal/IdeaProjects/Selenium-Implementation/src/test/java/tests/SwagLabs/SwagLabRunner.xml" />
+      <item itemvalue="TestNG.CommonTests" />
+      <item itemvalue="TestNG.CommonTests.login" />
+      <item itemvalue="TestNG.CommonTests.windowHandle" />
       <item itemvalue="TestNG.HomePageTests" />
-      <item itemvalue="TestNG.HomePageTests.removeFromCart" />
       <item itemvalue="TestNG.ProductPageTests" />
-      <item itemvalue="TestNG.LoginTests.loginEnter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CommonTests.windowHandle" />
+        <item itemvalue="TestNG.CommonTests" />
+        <item itemvalue="TestNG.CommonTests.login" />
         <item itemvalue="TestNG.HomePageTests" />
         <item itemvalue="TestNG.ProductPageTests" />
-        <item itemvalue="TestNG.HomePageTests.removeFromCart" />
-        <item itemvalue="TestNG.LoginTests.loginEnter" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679478181315</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add testng report">
+      <created>1679862649847</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679862649847</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,16 +241,5 @@
     <MESSAGE value="changes in basetest class and testng reporter enabled" />
     <MESSAGE value="add testng report" />
     <option name="LAST_COMMIT_MESSAGE" value="add testng report" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/SwagLabs/LoginTests.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

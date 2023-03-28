@@ -4,9 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71782ddc-c9ad-45e6-a1f5-fdf6f5a737ee" name="Changes" comment="add testng report">
-      <change afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+    <list default="true" id="71782ddc-c9ad-45e6-a1f5-fdf6f5a737ee" name="Changes" comment="Allure Report configured">
+      <change afterPath="$PROJECT_DIR$/allure-results/0567a02e-9f26-4a74-a248-50f65a73ca45-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/194af68b-df76-4ad6-afab-3569c20745e8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1a12ac32-4113-4cd4-b387-d4b9b2fa7cf2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1af59be4-5b8e-4e3f-8e20-e7af0823f9ec-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1edfe184-c040-4d2c-a2c4-876577e0a561-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2008d4f8-7137-4dd1-af14-43f72e6baa03-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/220fec00-5728-4f53-9b9d-3be0e0bbfa3d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2881e7ff-e456-4eda-9e96-6d1dbf541b6b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2bc84ed1-03a4-4d7d-ba14-0fe3227892bd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2e04e4ec-7233-4d54-aff1-66e67f9f509a-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4f37e674-11f6-44e0-9f73-46a70f1e67d9-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5ae46666-22f8-4bf1-8aea-e90fb87591a8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/607ff234-07ea-4e81-8994-12672a32b26c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/653745eb-7f88-40e7-beaf-9fe8dd3332df-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/90952b04-8d69-49a7-b704-9e3767285d21-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/91dae532-c49a-4c8a-b27d-736db37f9124-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/94e9abf1-306d-4cd2-b7d6-85f25740cba0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a1a78d65-5eb0-4393-aae2-30223d380c8f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a84e5790-4672-415f-9eef-7e2638627c9b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/aed471ef-1089-4531-985e-91cf0b6002a0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/be681aca-f7a4-44c9-98d3-bca887a9040f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d0dfac4f-7b3f-48d2-bac9-91cc1042b6c0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d606c997-eed9-4ce2-a10f-89de9647702f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/df0f7423-84a6-4223-bda1-9e33b5850274-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ebca290f-ca2a-4e4a-86af-866269e232ba-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f1be6532-6ac2-4245-86b0-f496f740d4d3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f7d1078b-c08d-4235-aceb-17f7c710bdfa-result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/healenium.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SwagLabs/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SwagLabs/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +236,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="changes in basetest class and testng reporter enabled" />
     <MESSAGE value="add testng report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add testng report" />
+    <MESSAGE value="Allure Report configured" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allure Report configured" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

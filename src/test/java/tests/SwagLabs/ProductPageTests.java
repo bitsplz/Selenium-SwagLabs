@@ -20,17 +20,17 @@ public class ProductPageTests extends BaseTest{
         homePage.clickOnProductName(properties.getProperty("product_name"));
         productPage = new ProductPage(driver);
     }
-    @Test(description = "Case 1: Verify add to cart should work on product page successfully")
+    @Test(description = "Verify add to cart should work on product page successfully")
     public void addToCartProductPage() {
         productPage.getAddToCartButton().click();
-        Assert.assertEquals(homePage.getCartCountText(), "1");
+        Assert.assertEquals(homePage.getCartCount(), 1);
         productPage.resetAppState();
     }
-    @Test(description = "Case 2: Verify remove from cart should work on product page successfully")
+    @Test(description = "Verify remove from cart should work on product page successfully")
     public void removeFromCartProductPage() {
         productPage.getAddToCartButton().click();
-        Assert.assertEquals(homePage.getCartCountText(), "1");
+        Assert.assertEquals(homePage.getCartCount(), 1);
         productPage.getRemoveFromCartButton().click();
-        Assert.assertTrue(productPage.getCartCount().size()==0);
+        Assert.assertEquals(productPage.getCartCountList().size(), 0);
     }
 }

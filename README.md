@@ -12,12 +12,12 @@
 
 ### Execution
 
-> Access project root
-
 > Execute the command to run all tests in the project
 ```
 	$ mvn clean test
 ```
+OR
+> Execute the [xml runner](src/test/java/SwagLabRunner.xml) to run all tests in the project
 
 ## Technologies:
 - Selenium WebDriver
@@ -28,4 +28,8 @@
 - Page Object Model
 
 ## Reports
-* To view report of test, access the file: */test-output/emailable-report.html*
+* To view allure report, execute the following command:
+```
+    $ allure serve allure-results
+```
+* To view testNg report of test, access the file: */test-output/emailable-report.html*

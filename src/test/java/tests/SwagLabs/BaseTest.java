@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.asserts.SoftAssert;
 import utils.UtilsConfig;
 
 import java.util.Properties;
@@ -14,6 +15,7 @@ public class BaseTest {
     protected Properties properties;
     protected Properties XPATH;
     protected ChromeOptions options;
+    protected SoftAssert softAssert;
 
     @BeforeClass
     public void setupBeforeTest(){
@@ -24,6 +26,7 @@ public class BaseTest {
         this.driver = new ChromeDriver(this.options);
         this.properties = UtilsConfig.getProperties("SwagLabs");
         this.XPATH = UtilsConfig.getProperties("xpath");
+        this.softAssert = new SoftAssert();
     }
 
     @AfterClass

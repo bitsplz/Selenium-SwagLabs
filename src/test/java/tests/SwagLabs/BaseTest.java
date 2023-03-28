@@ -3,9 +3,8 @@ package tests.SwagLabs;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import utils.UtilsConfig;
 
 import java.util.Properties;
@@ -15,9 +14,9 @@ public class BaseTest {
     protected Properties properties;
     protected Properties XPATH;
     protected ChromeOptions options;
-    protected WebDriverWait wait;
-    @BeforeTest
-    public void setupBeforeSuite(){
+
+    @BeforeClass
+    public void setupBeforeTest(){
         this.options = new ChromeOptions();
         this.options.addArguments("start-maximized");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
@@ -27,7 +26,7 @@ public class BaseTest {
         this.XPATH = UtilsConfig.getProperties("xpath");
     }
 
-    @AfterTest
+    @AfterClass
     public void setupAfterSuite() {
         this.driver.quit();
     }

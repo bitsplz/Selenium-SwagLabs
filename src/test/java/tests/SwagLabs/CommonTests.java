@@ -16,7 +16,7 @@ public class CommonTests extends BaseTest{
         driver.get(properties.getProperty("URL"));
         loginPage = new LoginPage(driver);
     }
-    @Test(description = "Case 1: Verify Page titles")
+    @Test(description = "Verify Page titles")
     public void verifyPageTitles(){
         Assert.assertEquals(loginPage.getPageTitle(),properties.getProperty("page_title"));
         loginPage.login(properties.getProperty("username"), properties.getProperty("password"),false);
@@ -26,7 +26,7 @@ public class CommonTests extends BaseTest{
         ProductPage productPage = new ProductPage(driver);
         Assert.assertEquals(productPage.getPageTitle(),properties.getProperty("page_title"));
     }
-    @Test(description = "Case 2: Verify Page URLs")
+    @Test(description = "Verify Page URLs")
     public void verifyPageURL(){
         Assert.assertEquals(loginPage.getPageURL(),properties.getProperty("URL"));
         loginPage.login(properties.getProperty("username"), properties.getProperty("password"),false);
@@ -35,23 +35,23 @@ public class CommonTests extends BaseTest{
         homePage.clickOnProductName(properties.getProperty("product_name"));
         ProductPage productPage = new ProductPage(driver);
         String s = productPage.getPageURL();
-        Assert.assertTrue(s.substring(0, s.length() - 1).equals(properties.getProperty("product_page_url")));
+        Assert.assertEquals(properties.getProperty("product_page_url"), s.substring(0, s.length() - 1));
     }
 
-    @Test(description = "Case 3: Use Assertion on page source")
+    @Test(description = "Use Assertion on page source")
     public void verifyPageSourceElement(){
         Assert.assertTrue(loginPage.getPageSource().contains("<meta name=\"description\" content=\"Sauce Labs Swag Labs app\">"));
     }
 
-    @Test(description = "Case 4: Use Assertion on page source")
+    @Test(description = "Verify social media links in footer are working")
     public void windowHandle(){
         loginPage.login(properties.getProperty("username"), properties.getProperty("password"),false);
         HomePage homePage = new HomePage(driver);
-        /** Open 3 child windows **/
+        // Open 3 child windows
         homePage.goToSocialMedia("facebook");
         homePage.goToSocialMedia("twitter");
         homePage.goToSocialMedia("linkedin");
-        /** Iterate through the child windows to assert page title **/
+        //Iterate through the child windows to assert page title
         String mainWindow = driver.getWindowHandle();
         Set<String> allWindows = driver.getWindowHandles();
         Iterator<String> i1 = allWindows.iterator();

@@ -16,4 +16,14 @@
             <class name="tests.SwagLabs.ProductPageTests"></class>
         </classes>
     </test>
+    <test name="XpathTests">
+        <classes>
+            <class name="tests.SwagLabs.XpathTests"></class>
+        </classes>
+    </test>
+    <test name="CommonTests">
+        <classes>
+            <class name="tests.SwagLabs.CommonTests"></class>
+        </classes>
+    </test>
 </suite>

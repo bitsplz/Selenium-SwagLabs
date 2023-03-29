@@ -23,6 +23,9 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         this.options = new ChromeOptions();
         this.options.addArguments("start-maximized");
+        this.options.addArguments("--no-sandbox");
+        this.options.addArguments("--disable-dev-shm-usage");
+        this.options.addArguments("--headless");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
         this.driver = new ChromeDriver(this.options);
         this.properties = UtilsConfig.getProperties("SwagLabs");

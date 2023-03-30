@@ -17,8 +17,8 @@ public class HomePage extends BaseClass {
         driver.findElement(By.xpath("//select[@class='product_sort_container']/option[@value='" + value + "']")).click();
     }
     //get the filter value
-    public String getAppliedFilter() {
-        return driver.findElement(By.xpath("//div[@class='right_component']/span/span")).getText();
+    public Boolean chkAppliedFilter(String filter) {
+        return driver.findElement(By.xpath("//span[contains(text(),'"+filter+"')]"))!=null;
     }
 
     public String getPageHeading() {

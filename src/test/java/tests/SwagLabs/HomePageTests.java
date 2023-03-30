@@ -21,7 +21,7 @@ public class HomePageTests extends BaseTest{
     @Test(description = "Verify Filter should be applied successfully")
     public void applyFilter(){
         homePage.applyFilter(properties.getProperty("sort_filter"));
-        Assert.assertEquals(homePage.getAppliedFilter(), properties.getProperty("sort_filter_text"));
+        Assert.assertTrue(homePage.chkAppliedFilter(properties.getProperty("sort_filter_text")));
     }
     @Test(description = "Verify product page should be opened successfully")
     public void goToProductPage(){

@@ -1,5 +1,6 @@
 package tests.SwagLabs;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,10 +20,13 @@ public class BaseTest {
 
     @BeforeClass
     public void setupBeforeTest(){
+        WebDriverManager.chromedriver().setup();
         this.options = new ChromeOptions();
         this.options.addArguments("start-maximized");
+        this.options.addArguments("--no-sandbox");
+        this.options.addArguments("--disable-dev-shm-usage");
+        this.options.addArguments("--headless");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\mujtaba.afzal\\Documents\\ChromeDriver\\chromedriver.exe");
         this.driver = new ChromeDriver(this.options);
         this.properties = UtilsConfig.getProperties("SwagLabs");
         this.XPATH = UtilsConfig.getProperties("xpath");
